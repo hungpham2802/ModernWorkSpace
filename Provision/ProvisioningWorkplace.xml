@@ -1,0 +1,12 @@
+<pnp:ProvisioningTemplate
+      xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema"
+      ID="xsd:ID"
+      Version="xsd:decimal"
+      BaseSiteTemplate="xsd:string"
+      ImagePreviewUrl="xsd:string"
+      DisplayName="xsd:string"
+      Description="xsd:string"
+      TemplateCultureInfo="pnp:ReplaceableString"
+      Scope="">
+      
+      </pnp:ProvisioningTemplate>

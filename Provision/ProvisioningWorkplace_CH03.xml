@@ -1,0 +1,24 @@
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+    <pnp:Templates ID="CONTAINER-TEMPLATE-AAE59FE314734AFAA5C86866441D8A98">
+        <pnp:ProvisioningTemplate ID="TEMPLATE-67AB254EB99240DFA53F78CC753AE8D7" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+            <pnp:Security>
+                <pnp:SiteGroups>
+                   <pnp:SiteGroup Title="Product Leads" Description="Group for all product leads" Owner="i:0#.f|membership|AdeleV@phamhung.name.vn" AllowMembersEditMembership="false" AllowRequestToJoinLeave="false" AutoAcceptRequestToJoinLeave="false" OnlyAllowMembersViewMembership="true" />
+                </pnp:SiteGroups>
+            </pnp:Security>
+            <pnp:SiteFields>
+                <Field ID="746D7D9C-7A08-4E7D-9480-804601EF2111" DisplayName="Product Lead" Name="ProductLead" Type="User" UserSelectionMode="PeopleOnly" UserSelectionScope="20" Group="Cloudhadi Columns" />
+                <Field ID="555653F3-12BC-4487-8ED9-C1F87D73DC91" DisplayName="Inspection Lead" Name="InspectionLead" Type="User" UserSelectionMode="PeopleOnly" UserSelectionScope="20" Group="Cloudhadi Columns" />
+                <Field ID="F7EE4F85-3496-4CB6-B8AE-310644769F45" DisplayName="Initiate Approval" Name="InitiateApproval" Type="Text" Group="Cloudhadi Columns" />                
+            </pnp:SiteFields>
+
+            <pnp:ContentTypes>
+                <pnp:ContentType ID="0x010100C1B123C08DD74EB7B8ABE22C7D89C293" Name="Cloudhadi Document" Description="For product documents" Group="Cloudhadi Content Types">
+                    <pnp:FieldRefs>
+                        <pnp:FieldRef ID="F7EE4F85-3496-4CB6-B8AE-310644769F45" Name="InitiateApproval" Required="false" UpdateChildren="true" />
+                    </pnp:FieldRefs>
+                </pnp:ContentType>
+            </pnp:ContentTypes>
+        </pnp:ProvisioningTemplate>
+    </pnp:Templates>
+</pnp:Provisioning>
